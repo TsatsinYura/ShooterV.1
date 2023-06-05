@@ -4,7 +4,7 @@ from panda3d.core import CollisionHandlerQueue, CollisionRay
 from panda3d.core import BitMask32
 from panda3d.core import LPoint3f
 from mapmanager import MapManager
-
+asdfasdfa
 
 # Класс редактора блоков
 class Editor(DirectObject):
@@ -53,7 +53,7 @@ class Editor(DirectObject):
         # регистрируем на нажатие правой кнопки мыши
         # событие удаления блока
         self.accept('mouse3', self.delBlock)
-
+adsfasdf
     #метод установки режима редактирования
     def setEditMode(self, mode):
         self.edit_mode = mode
@@ -83,7 +83,7 @@ class Editor(DirectObject):
             self.map_manager.addBlock(self.new_position)
             # сбрасываем выделение
             self.resetSelectedBlock()
-
+adsfas
     # Метод удаления блока
     def delBlock(self):
         # удаляем выделенный блок
@@ -91,12 +91,7 @@ class Editor(DirectObject):
         # сбрасываем выделение
         self.resetSelectedBlock()
 
-    # Метод проверки проверки выделения блоков
-    def testBlocksSelection(self, task):
-        # устанавливаем позицию луча столкновений в центр экрана
-        self.collisRay.setFromLens(base.camNode, 0, 0)
-        # запускаем конвейер на проверку
-        self.traverser.traverse(base.render)
+ 
 
         # если конвейер обнаружил какие-то столкновения
         if self.collisQueue.getNumEntries() > 0:
